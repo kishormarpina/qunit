@@ -8,7 +8,7 @@ const ProductList = () => {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     useEffect(() => {
-        // Fetch products from Fakestore API
+        // Fetch products from Fakestore API 
         axios.get('https://fakestoreapi.com/products')
             .then(response => setProducts(response.data))
             .catch(error => console.error('Error fetching products:', error));
