@@ -24,7 +24,7 @@ const LoginSignupButtons = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:8081/api/v1/login', {
+      const response = await axios.post('https://9a34-103-125-160-114.ngrok-free.app/api/v1/login', {
         email: username,
         password,
       });
@@ -41,7 +41,7 @@ const LoginSignupButtons = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post('http://localhost:8081/api/v1/login', {
+      const response = await axios.post('https://9a34-103-125-160-114.ngrok-free.app//api/v1/login', {
         email,
         firstName,
         lastName,
